@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>listInspect — Top Digital Etsy Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>listInspect</h1>
+    <p>Find top digital-product listings on Etsy by keyword.</p>
+  </header>
+
+  <form id="search-form">
+    <input id="keywords" type="text" placeholder="e.g. handmade svg, digital planner, printable wall art" required />
+    <select id="category">
+      <option value="any">Any digital category</option>
+      <option value="digital-prints">Digital Prints</option>
+      <option value="patterns-how-to">Patterns &amp; How-To</option>
+      <option value="paper-party-digital">Paper &amp; Party (Digital)</option>
+      <option value="craft-supplies-digital">Craft Supplies (Digital)</option>
+    </select>
+    <input id="minPrice" type="number" placeholder="min $" min="0" step="0.01" />
+    <input id="maxPrice" type="number" placeholder="max $" min="0" step="0.01" />
+    <label><input id="digitalOnly" type="checkbox" checked /> Digital only</label>
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="status"></p>
+
+  <table id="results">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Favorites</th>
+        <th>Digital?</th>
+        <th>Tags</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>

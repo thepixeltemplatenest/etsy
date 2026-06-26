@@ -1,0 +1,15 @@
+{
+  "name": "listinspect",
+  "version": "0.1.0",
+  "description": "Local tool to find top digital-product listings on Etsy using the official Etsy Open API",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
